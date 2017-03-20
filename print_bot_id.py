@@ -6,7 +6,6 @@ BOT_NAME = 'viola'
 
 slack_client = SlackClient(os.environ.get('SLACK_BOT_TOKEN'))
 #slack_client = SlackClient(os.environ.get('SLACK_BOT_TOKEN'))
-#slack_client = 'xoxb-156878149187-OPZCDKVupxclxLprsbieBY96'
 print ( slack_client)
 if __name__ == "__main__":
     api_call = slack_client.api_call("users.list")
